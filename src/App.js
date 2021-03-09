@@ -47,31 +47,32 @@ function App() {
 
   return (
     <div className="container">
-      <div className="pokemon-container"> 
-      {
+      <div className="pokemon-container">
+        {
 
-        pokemon.map(pokemon => (
-          <div key={pokemon.name} className="pokemon"> 
-            <img src={buildImgUrl(pokemon.url)} alt={pokemon.name} />
+          pokemon.map(pokemon => (
+            <div key={pokemon.name} className="pokemon">
+              <img src={buildImgUrl(pokemon.url)} alt={pokemon.name} />
 
-            <p>{pokemon.name}</p>
-          </div>
-        ))}
+              <p>{pokemon.name}</p>
+            </div>
+          ))}
       </div>
       <div className="buttons-container">
 
         <button
-         onClick={() => seePrev(prev)}
-         disabled={prev == null ? true : false}
-         >Ver anteriores</button>
-        <button 
-        onClick={() => seeNext(next)}
-        disabled={next == null ? true : false}
+          onClick={() => seePrev(prev)}
+          disabled={prev == null ? true : false}
+          className={prev == null ? "btn-disabled" : ""}
+
+        >Ver anteriores
+        </button>
+        <button
+          onClick={() => seeNext(next)}
+          disabled={next == null ? true : false}
+          className={next == null ? "btn-disabled" : ""}
         >Ver proximos</button>
       </div>
-
-
-
     </div>
   );
 
