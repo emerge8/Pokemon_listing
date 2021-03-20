@@ -1,5 +1,5 @@
 # Pokemon listing
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/emerge8/dscatalog-bootcamp-devsuperior/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/emerge8/pokemon_listing/blob/master/LICENSE) 
 
 # Sobre o projeto
 
